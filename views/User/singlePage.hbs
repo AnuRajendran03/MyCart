@@ -1,0 +1,99 @@
+ {{>Nav}}
+ <style>
+    .main
+    {
+        width: 900px;
+        height: 500px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+    }
+    .pic
+    {
+        width: 450px;
+        height: 450px;
+        margin: 20px;
+     }
+     .desCr
+    {
+        width: 350px;
+        height: 450px;
+        border: 2px solid gray;
+        margin: 20px;
+        padding: 20px;
+     }
+     .btn1{
+  background-color: teal;
+  border-radius:6px;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+     }
+     .btn1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid teal;
+}
+
+.btn1:hover {
+  background-color: teal;
+}
+    .btn2{
+  background-color:  #f45145;
+  border-radius:6px;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+
+     }
+     .btn2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid  #f45145;
+}
+
+.btn2:hover {
+  background-color:  #f45145;
+}
+.btnm
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+ </style>
+
+
+ <div class="main">
+    <div class="pic">
+        <img src="/images/product/{{Product.image}}" style="width: 440px;height:450px" alt="">
+    </div>
+    <div class="desCr" style="padding-top: 60px;">
+        <h3>{{Product.name}}</h23>
+        <br>
+        <h5>{{Product.description }}</h5>
+        <br>
+        <h4>$ {{Product.price}}</h4>
+        <br>
+        <br>
+        <div class="btnm">
+    <div class="btn1"><a href="/checkOut/{{Product.price}}/{{Product.id}}" style="text-decoration: none;color:black">Check out</a></div>
+     <div class="btn2"><a href="" style="text-decoration: none;color:black">Cancel</a></div>
+     </div>
+    </div>
+ </div> 

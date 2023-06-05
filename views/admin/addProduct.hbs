@@ -1,0 +1,157 @@
+<style>
+    * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+		 border-radius: 4px;
+}
+::-webkit-scrollbar {
+	width: 0;
+}
+body {
+	background: #333;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+header.add {
+	padding-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.page-title {
+	padding: .5rem;
+	color: teal;
+	font-size:50px;
+	font-weight: bold;
+}
+main.add {
+	width: 75vw;
+	max-width: 850px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	align-items: center;
+}
+form {
+	width: 100%;
+	background-color: teal;
+	border-radius: 4px;
+  	box-shadow: black 0px 2px 4px, black 0px 7px 13px -3px, black 0px -3px 0px inset;
+
+}
+label,
+input,
+.weight,
+.image-input {
+	display: block;
+	width: 50%;
+	margin: 1rem auto;
+	
+}
+
+label {
+	font-weight: 600;
+	display: flex;
+	justify-content: space-between;
+	 color:black;
+	 font-size: 24px;
+
+}
+input.add {
+	padding: 1rem;
+	outline: none;
+	border: none;
+}
+input:focus,
+select:focus {
+	outline: 2px inset black;
+}
+.weight {
+	display: flex;
+	justify-content: between;
+}
+.weight input {
+	margin: 0;
+	flex: 1;
+}
+select {
+	display: block;
+	margin-left: 2rem;
+	padding: 0 1rem;
+	outline: none;
+	border: none;
+	background: black;
+}
+.image-input {
+	background: white;
+	display: flex;
+	align-items: center;
+}
+.sub{
+	display: block;
+	margin: 1rem auto;
+	width: 50%;
+	padding: 0.5rem 0;
+	color: white;
+	outline: none;
+	border: none;
+	font-weight: 600;
+	background:#333;
+	cursor: pointer;
+}
+@media only screen and (max-width: 800px) {
+	label,
+	input,
+	.weight,
+	.image-input,
+	form button {
+		width: 100%;
+	}
+}
+
+</style>
+
+<header class="add">
+</header>
+<h3 class="page-title">MyCart</h3>
+<main class="add">
+	<form method="post" action="/admin/addItem" enctype="multipart/form-data">
+		<div>
+			<label>ProductName</label>
+			<input class="add" name="name">
+		</div>
+		<div>
+			<label>Price</label>
+			<div class="weight">
+				<input type="text" class="add" name="price">
+			</div>
+		</div>
+		<div>
+			<label>
+				<span>Offer</span>
+			</label>
+			<input type="number" min="0" class="add" name="offer">
+		</div>
+		<div>
+			<label>
+				<span>Description</span>
+			</label>
+			<input type="text" class="add" name="description">
+		</div>
+		<div>
+			<label>
+				<span>Image</span>
+			</label>
+			<div class="image-input">
+				<input class="img" type="file" name="image">
+			</div>
+		</div>
+		<div class="sub">
+			<input  style="background-color:#333; color:whitesmoke;border:none;font-size:24px;font-weight:bold;" type="submit" value="Add">
+		</div>
+	</form>
+</main>

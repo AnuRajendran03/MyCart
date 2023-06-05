@@ -1,0 +1,141 @@
+
+<style>
+    ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+
+  }
+  
+  li {
+	float: right;
+    
+  }
+  
+  li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+     font-size:  30px ;
+    font-weight:bold ;
+    padding-right: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  li a:hover 
+  {
+	color: teal;
+  }
+</style>
+
+<ul>
+  <li style="padding-top:10px;padding-right:15px;"><a class="active" href="#home">Logout</a></li>
+  <li style="float: left;"><a href="#contact" style="	color: teal; font-size:50px;font-family: 'Source Sans Pro', sans-serif;">MyCart</a></li>
+</ul>
+
+<style>
+
+.sideBar
+{
+  width: 250px;
+  height: 470px;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: black 0px 2px 4px, black 0px 7px 13px -3px, black 0px -3px 0px inset;
+  margin-top: 7px;
+ 
+}
+
+button {
+  height: 90px;
+  width: 150px;
+  font-size: 25px;
+  font-weight:bold ;
+  background-color: #333;
+  border: none;
+  color: azure;
+      font-family: 'Source Sans Pro', sans-serif;
+ 
+ 
+}
+button:hover
+{
+  color:teal;
+}
+.addP{
+  color: azure;
+}
+.addP:hover {
+ color: teal;
+}
+
+.items
+{
+  display: flex;
+  position: absolute;
+  left: 250px;
+  color: whitesmoke;
+  margin-top: -10px;
+}
+
+.items2
+{
+  display: flex;
+  position: absolute;
+  left: 250px;
+  color:whitesmoke;
+  margin-top: -16px;
+}
+.category
+{
+  border: 3px inset black;
+  border-radius: 6px;
+  width: 300px;
+  height: 230px;
+  padding-top: 70px;
+  font-weight: bold;
+  font-size: 35px;
+  margin-left: 20px;
+  text-align: center;
+  background-color: teal;
+      font-family: 'Source Sans Pro', sans-serif;
+}
+</style>
+
+<body style="background-color: #333;">
+      <div class="sideBar">
+         <button><a href="/admin/addProduct" class="addP" style="text-decoration: none;">AddProduct</a></button>
+         <button>Orders</button>
+         <button>Approval</button>
+         <button>About</button>
+       
+
+       <div class="items" style="padding-top: 10px;">
+        <div class="category">User</div>
+        <div class="category">Orders</div>
+        <div class="category">Products</div>
+       </div>
+
+       <div class="items2" style="padding-top: 270px;">
+        <div class="category">Approval</div>
+        <div class="category">Categories</div>
+        <div class="category">Issues</div>
+       </div>
+
+       </div>
+</body>
+
+
+
+
+
+
+
+

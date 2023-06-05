@@ -1,0 +1,59 @@
+<section class="h-100 gradient-form" style= "background: rgb(5, 70, 70)";>
+  <div class="container py-5 h-100" >
+    <div class="row d-flex justify-content-center align-items-center h-100 ">
+      <div class="col-xl-6">
+        <div class="card rounded-3 text-black">
+          <div class="row g-0">
+            <div class="col-lg-14">
+              <div class="card-body p-md-5 mx-md-4" >
+
+                <div class="text-center" > 
+                  {{!-- <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                    style="width: 185px;" alt="logo"> --}}
+                  <h4 class="mt-1 mb-5 pb-1" style="font-weight: bold; font-size:40px; color:rgb(5, 70, 70)">Registration</h4>
+                </div>
+
+                <form action="/Register" method="post">
+                  <p style="font-size: 22px;">  Please register with your deatails</p><br>
+
+                  <div class="form-outline mb-4">
+                    <input type="text" name="user" id="form2Example11" class="form-control">
+                    <label class="form-label" for="form2Example11">Username</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="email" name="email" id="form2Example11" class="form-control"/>
+                    <label class="form-label" for="form2Example11">Email</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" name="password" id="form2Example22" class="form-control" />
+                    <label class="form-label" for="form2Example22">Password</label>
+                  </div>
+
+                   <div class="form-outline mb-4">
+                    <input type="password" name="cpassword" id="form2Example22" class="form-control" />
+                    <label class="form-label" for="form2Example22">Confirm Password</label>
+                  </div>
+
+                  <div class="text-center pt-1 mb-5 pb-1">
+                    <input class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit" value="Register"style="border: none;">
+  
+                    <a class="text-muted" href="#!" style="margin-left: 10px;">Forgot password?</a>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-center pb-4">
+                    <p class="mb-0 me-2">You have already an account?</p>
+                    <button class="blast"><a href="/Login"  style="text-decoration:none; color:rgb(5, 70, 70);">Sign in</a></button>
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

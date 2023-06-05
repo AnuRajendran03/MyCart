@@ -1,0 +1,95 @@
+/* *
+{
+  margin: 0;
+}
+.navb
+{
+  width: 100%;
+  height: 70px;
+  background-color: teal;
+}
+ul{
+list-style-type: none;
+padding-top: 25px;
+text-align: right;
+}
+li
+{
+  color: rgb(41, 43, 44);
+  display: inline;
+  font: 17px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 30px;
+  font-weight: bold;
+  cursor:pointer;
+}
+li:hover
+{
+  color:aliceblue;
+}
+.sideBar
+{
+  margin-top: 10px;
+  width: 300px;
+  height: 400px;
+  background-color:rgb(51, 101, 101);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+button { 
+  margin: 10px;
+  height: 70px;
+  width: 250px;
+  font: 25px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight:bold ;
+  background-color: teal;
+  border: none;
+ 
+}
+button:hover
+{
+  color:aliceblue;
+}
+.gradient-custom-2 {
+/* fallback for old browsers */
+.gradient-custom-2 {
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593); */
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgb(4, 74, 74), rgb(11, 90, 90), rgb(11, 115, 115), teal);
+  border: none;
+  }
+  
+  @media (min-width: 768px) {
+  .gradient-form {
+  height: 100vh !important;
+  }
+  }
+  @media (min-width: 769px) {
+  .gradient-custom-2 {
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  }
+  }
+  .blast
+  {
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+  }
+  /* .blast:hover{
+    background-color: rgb(139, 136, 136);
+    border-radius: 3px;
+    padding: 7px; 
+  } */
+body
+{
+  background: rgb(6, 7, 7);
+}
+
+  
